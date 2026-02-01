@@ -11,31 +11,51 @@
   <!-- Icons -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
 
-  <!-- AOS Animation -->
+  <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 
   <style>
+    :root {
+      --hanko-red: #c62828;
+    }
+
     body {
       font-family: 'Poppins', sans-serif;
     }
+
     .hero {
-      background: #c62828;
+      background: var(--hanko-red);
       color: white;
-      padding: 80px 20px;
+      padding: 90px 20px;
       border-radius: 0 0 40px 40px;
     }
-    .hero img {
-      max-height: 250px;
-    }
+
     .product-card {
       border: none;
       transition: 0.3s;
     }
+
     .product-card:hover {
       transform: translateY(-10px);
       box-shadow: 0 20px 40px rgba(0,0,0,0.15);
     }
+
+    .btn-hanko {
+      background: var(--hanko-red);
+      color: white;
+      border: none;
+    }
+
+    .btn-hanko:hover {
+      background: #a81f1f;
+    }
+
+    footer {
+      background: var(--hanko-red);
+    }
+
     footer a {
+      color: white;
       text-decoration: none;
     }
   </style>
@@ -55,7 +75,7 @@
   </div>
 </section>
 
-<!-- PRODUCT -->
+<!-- PRODUK -->
 <section class="container my-5 text-center">
   <h2 class="mb-4" data-aos="fade-down">Produk Unggulan</h2>
 
@@ -65,7 +85,7 @@
         <img src="assets/product1.jpg" class="img-fluid rounded mb-3" alt="HanKo">
         <h5>HanKo</h5>
         <p class="text-muted">Gantungan Kunci Handmade</p>
-        <a href="detail.html" class="btn btn-dark">
+        <a href="detail.html" class="btn btn-hanko">
           Lihat Detail <i class="uil uil-arrow-right"></i>
         </a>
       </div>
@@ -74,14 +94,14 @@
 </section>
 
 <!-- FOOTER -->
-<footer class="bg-dark text-white py-4">
+<footer class="py-4">
   <div class="container d-flex justify-content-between align-items-center">
-    <strong>HanKo</strong>
+    <strong class="text-white">HanKo</strong>
     <div class="d-flex gap-3">
-      <a href="https://www.instagram.com/hanko.official?igsh=eTE0bWRvZzNjbnR5" class="text-white">
+      <a href="https://www.instagram.com/hanko.official?igsh=eTE0bWRvZzNjbnR5">
         <i class="uil uil-instagram"></i> Instagram
       </a>
-      <a href="https://www.tiktok.com/@hanko.official?_r=1&_t=ZS-93NzWbIKabR" class="text-white">
+      <a href="https://www.tiktok.com/@hanko.official?_r=1&_t=ZS-93NzWbIKabR">
         <i class="uil uil-music-note"></i> TikTok
       </a>
     </div>
@@ -89,6 +109,8 @@
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init({ duration: 1000, once: true });</script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
 </body>
 </html>
