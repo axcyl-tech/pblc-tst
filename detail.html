@@ -5,14 +5,36 @@
   <title>Detail Produk | HanKo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
+  <!-- Bootstrap -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Icons -->
   <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.8/css/line.css">
+
+  <!-- AOS -->
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css"/>
 
   <style>
+    :root {
+      --hanko-red: #c62828;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+    }
+
     .buy-btn {
       font-size: 18px;
-      padding: 12px 24px;
+      padding: 12px 26px;
+    }
+
+    footer {
+      background: var(--hanko-red);
+    }
+
+    footer a {
+      color: white;
+      text-decoration: none;
     }
   </style>
 </head>
@@ -21,7 +43,7 @@
 
 <section class="container my-5">
   <div class="row align-items-center">
-    
+
     <div class="col-md-6 text-center" data-aos="fade-right">
       <img src="assets/product1.jpg" class="img-fluid rounded" alt="HanKo">
     </div>
@@ -30,10 +52,11 @@
       <h2 class="fw-bold">HanKo</h2>
       <p class="mt-3">
         HanKo adalah kerajinan gantungan kunci dari benang wol yang terinspirasi
-        dari gabungan budaya Korea dan Jepang.  
+        dari gabungan budaya Korea dan Jepang.
         <br><br>
-        Perpaduan warna lembut ala Hanbok dan bentuk simple khas Kokeshi
-        membuat HanKo terlihat estetik, unik, dan bermakna.
+        Nama Han diambil dari Hanbok, pakaian tradisional Korea, dan Ko dari
+        Kokeshi, boneka khas Jepang. Perpaduan ini menciptakan produk yang
+        estetik, unik, dan penuh makna budaya.
       </p>
 
       <h4 class="fw-bold mt-4">Rp 50.000</h4>
@@ -50,18 +73,20 @@
   </div>
 </section>
 
-<footer class="bg-dark text-white py-4">
-  <div class="container d-flex justify-content-between">
-    <strong>HanKo</strong>
+<!-- FOOTER -->
+<footer class="py-4">
+  <div class="container d-flex justify-content-between align-items-center">
+    <strong class="text-white">HanKo</strong>
     <div class="d-flex gap-3">
-      <a href="https://www.instagram.com/hanko.official?igsh=eTE0bWRvZzNjbnR5" class="text-white">Instagram</a>
-      <a href="https://www.tiktok.com/@hanko.official?_r=1&_t=ZS-93NzWbIKabR" class="text-white">TikTok</a>
+      <a href="https://www.instagram.com/hanko.official?igsh=eTE0bWRvZzNjbnR5">Instagram</a>
+      <a href="https://www.tiktok.com/@hanko.official?_r=1&_t=ZS-93NzWbIKabR">TikTok</a>
     </div>
   </div>
 </footer>
 
 <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-<script>AOS.init({ duration: 1000 });</script>
+<script>
+  AOS.init({ duration: 1000, once: true });
+</script>
 </body>
 </html>
-
